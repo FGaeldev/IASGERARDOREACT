@@ -85,7 +85,7 @@ export default function UserDash() {
   async function handleSave() {
     try {
       const res = await fetch(
-        "http://localhost/IAS/IASPhp/update_secQuestion.php",
+        "http://localhost/IAS/iasfinals/php/update_secQuestion.php",
         {
           method: "POST",
           credentials: "include",
@@ -116,7 +116,7 @@ export default function UserDash() {
   async function getData() {
     try {
       const res = await fetch(
-        "http://localhost/IAS/IASPhp/read_secQuestion.php",
+        "http://localhost/IAS/iasfinals/php/read_secQuestion.php",
         {
           method: "POST",
           credentials: "include",

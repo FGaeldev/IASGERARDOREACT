@@ -47,7 +47,7 @@ export default function SignUpForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const res = fetch("http://localhost/IAS/IASPhp/signin.php", {
+    const res = fetch("http://localhost/IAS/iasfinals/php/signin.php", {
       method: "POST",
       credentials: "include",
       headers: {

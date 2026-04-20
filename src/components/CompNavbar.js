@@ -35,7 +35,7 @@ export default function CompNavbar() {
         {isLoggedIn && (
           <button
             onClick={() => {
-              fetch("http://localhost/IAS/IASPhp/logout.php", {
+              fetch("http://localhost/IAS/iasfinals/php/logout.php", {
                 credentials: "include",
               }).then(() => {
                 setIsLoggedIn(false);
