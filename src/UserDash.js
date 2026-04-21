@@ -85,7 +85,7 @@ export default function UserDash() {
   async function handleSave() {
     try {
       const res = await fetch(
-        "http://localhost/IAS/iasfinals/api/update_secQuestion.php",
+        "https://gerardo.augusta2026.online/api/update_secQuestion.php",
         {
           method: "POST",
           credentials: "include",
@@ -116,7 +116,7 @@ export default function UserDash() {
   async function getData() {
     try {
       const res = await fetch(
-        "http://localhost/IAS/iasfinals/api/read_secQuestion.php",
+        "https://gerardo.augusta2026.online/api/read_secQuestion.php",
         {
           method: "POST",
           credentials: "include",

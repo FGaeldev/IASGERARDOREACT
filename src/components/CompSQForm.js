@@ -14,7 +14,7 @@ export default function SQForm({ mydata }) {
     const fetchQuestion = async () => {
       try {
         const res = await fetch(
-          "http://localhost/IAS/iasfinals/api/read_secQuestion.php",
+          "https://gerardo.augusta2026.online/api/read_secQuestion.php",
           {
             method: "POST",
             credentials: "include",
@@ -54,7 +54,7 @@ export default function SQForm({ mydata }) {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost/IAS/iasfinals/api/login_step_two.php", {
+      const res = await fetch("https://gerardo.augusta2026.online/api/login_step_two.php", {
         method: "POST",
         credentials: "include",
         headers: {

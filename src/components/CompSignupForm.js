@@ -47,7 +47,7 @@ export default function SignUpForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const res = fetch("http://localhost/IAS/iasfinals/api/signin.php", {
+    const res = fetch("https://gerardo.augusta2026.online/api/signin.php", {
       method: "POST",
       credentials: "include",
       headers: {
