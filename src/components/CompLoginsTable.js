@@ -12,7 +12,7 @@ export default function LoginsTable() {
 
   async function fetchLogs() {
     try {
-      const res = await fetch("http://localhost/IAS/iasfinals/php/logins_table.php", {
+      const res = await fetch("http://localhost/IAS/iasfinals/api/logins_table.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

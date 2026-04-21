@@ -12,7 +12,7 @@ export default function UsersTable() {
 
   //LOAD tbl_accounts
   function fetchTable() {
-    fetch("http://localhost/IAS/iasfinals/php/users_table.php", {
+    fetch("http://localhost/IAS/iasfinals/api/users_table.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export default function UsersTable() {
   const handleRoleChange = async (id, newRole) => {
     const prevUsers = [...users];
     try {
-      const res = await fetch("http://localhost/IAS/iasfinals/php/update_role.php", {
+      const res = await fetch("http://localhost/IAS/iasfinals/api/update_role.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +63,7 @@ export default function UsersTable() {
   const handleUserDelete = async (id, email) => {
     const prevUsers = [...users];
     try {
-      const res = await fetch("http://localhost/IAS/iasfinals/php/delete_user.php", {
+      const res = await fetch("http://localhost/IAS/iasfinals/api/delete_user.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

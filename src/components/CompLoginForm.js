@@ -68,7 +68,7 @@ export default function LoginForm({ onSuccess = () => {} }) {
     if (isLocked) return;
 
     try {
-      const res = await fetch("http://localhost/IAS/iasfinals/php/login.php", {
+      const res = await fetch("http://localhost/IAS/iasfinals/api/login.php", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -112,7 +112,7 @@ export default function LoginForm({ onSuccess = () => {} }) {
   // ✅ backend logging (only on failure)
   const logAttempt = async () => {
     try {
-      await fetch("http://localhost/IAS/iasfinals/php/log_attempt.php", {
+      await fetch("http://localhost/IAS/iasfinals/api/log_attempt.php", {
         method: "POST",
         credentials: "include",
         headers: {
