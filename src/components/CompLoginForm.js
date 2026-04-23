@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { checkAuth } from "./CompCheckAuth";
 import PasswordInput from "./CompPasswordInput";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const MAX_ATTEMPTS = 3;
 const LOCK_DURATION = 30;
@@ -174,9 +174,7 @@ export default function LoginForm({ onSuccess = () => {} }) {
         {/* LINK */}
         <p className="text-sm text-center mt-4">
           Don’t have an account?{" "}
-          <a href="/signup" className="text-blue-500 hover:underline">
-            Sign up
-          </a>
+          <Link to="/signup">Sign up</Link>
         </p>
       </form>
     </div>
